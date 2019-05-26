@@ -30,8 +30,8 @@
 
 
 <!-- ABOUT ZENTADEX -->
-## About ZENTADEX
-ZentaDex is not "Just Another" Dex, its an Open source fully Supported and fast Exchange platform. You can trade every ERC-20 token over ZentaDex. The User Interface is easy to use and the integration in our other products makes it more convenient for you! Due to the Nature of the Block-chain network your funds are secured on your own wallet, remember: not your keys not your coins. Also what are your waiting for? Trade on [ZentaDEX](http:///) today!
+## ZENTADEX
+ZentaDex is not "Just Another" Dex, its an Open source fully Supported and fast Crypto-exchange platform. You can trade every Zenta and Erc20 token over ZentaDex. The User Interface is easy to use and the integration in our other products makes it more convenient for you! Due to the Nature of the Blockchain-network your funds are secured on your own wallet, remember: not your keys not your coins. Also what are your waiting for? Trade on [ZentaDEX](http:///) today!
 
 
 Here's why:
