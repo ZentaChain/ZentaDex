@@ -1,10 +1,13 @@
 import { tokens, EVM_REVERT } from './helpers'
 
+
 const Token = artifacts.require('./Token')
+
 
 require('chai')
   .use(require('chai-as-promised'))
   .should()
+
 
 contract('Token', ([deployer, receiver, exchange]) => {
   const name = 'Zenta'
@@ -13,9 +16,11 @@ contract('Token', ([deployer, receiver, exchange]) => {
   const totalSupply = tokens(260514201).toString()
   let token
 
+
   beforeEach(async () => {
     token = await Token.new()
   })
+
 
   describe('deployment', () => {
     it('tracks the name', async () => {
@@ -44,6 +49,8 @@ contract('Token', ([deployer, receiver, exchange]) => {
     })
   })
 
+
+
   describe('sending tokens', () => {
     let result
     let amount
@@ -62,6 +69,8 @@ contract('Token', ([deployer, receiver, exchange]) => {
         balanceOf.toString().should.equal(tokens(1000).toString())
       })
 
+
+
       it('emits a Transfer event', async () => {
         const log = result.logs[0]
         log.event.should.eq('Transfer')
@@ -73,11 +82,13 @@ contract('Token', ([deployer, receiver, exchange]) => {
 
     })
 
+
+
     describe('failure', async () => {
 
       it('rejects insufficient balances', async () => {
         let invalidAmount
-        invalidAmount = tokens(2600000000) // 2,6 billion - greater than total supply
+        invalidAmount = tokens(2600000000) 
         await token.transfer(receiver, invalidAmount, { from: deployer }).should.be.rejectedWith(EVM_REVERT)
 
         
@@ -92,9 +103,12 @@ contract('Token', ([deployer, receiver, exchange]) => {
     })
   })
 
+
+
   describe('approving tokens', () => {
     let result
     let amount
+    
 
     beforeEach(async () => {
       amount = tokens(1000)
@@ -119,12 +133,16 @@ contract('Token', ([deployer, receiver, exchange]) => {
 
     })
 
+
+
     describe('failure', () => {
       it('rejects invalid spenders', async () => {
         await token.approve(0x0, amount, { from: deployer }).should.be.rejected
       })
     })
   })
+
+
 
   describe('delegated token transfers', () => {
     let result
@@ -163,6 +181,8 @@ contract('Token', ([deployer, receiver, exchange]) => {
       })
 
     })
+
+
 
     describe('failure', async () => {
       it('rejects insufficient amounts', async () => {
