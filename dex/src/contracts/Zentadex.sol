@@ -47,8 +47,6 @@ contract Zentadex {
         address userFill,
         uint256 timestamp
     );
-
-    
     struct _Order {
         uint256 id;
         address user;
@@ -135,4 +133,4 @@ contract Zentadex {
 
         emit Trade(_orderId, _user, _tokenGet, _amountGet, _tokenGive, _amountGive, msg.sender, now);
     }
-}
+};
