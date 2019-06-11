@@ -9,7 +9,7 @@ require('chai')
   .should()
 
 
-contract('Token', ([deployer, receiver, exchange]) => {
+contract('Token', ([deployer, receiver, zentadex]) => {
   const name = 'Zenta'
   const symbol = 'Zenta'
   const decimals = '18'
@@ -88,7 +88,7 @@ contract('Token', ([deployer, receiver, exchange]) => {
 
       it('rejects insufficient balances', async () => {
         let invalidAmount
-        invalidAmount = tokens(2600000000) 
+        invalidAmount = tokens(2600000000) // is higher than Totalsupply
         await token.transfer(receiver, invalidAmount, { from: deployer }).should.be.rejectedWith(EVM_REVERT)
 
         
@@ -112,12 +112,12 @@ contract('Token', ([deployer, receiver, exchange]) => {
 
     beforeEach(async () => {
       amount = tokens(1000)
-      result = await token.approve(exchange, amount, { from: deployer })
+      result = await token.approve(zentadex, amount, { from: deployer })
     })
 
     describe('success', () => {
-      it('allocates an allowance for delegated token spending on exchange', async () => {
-        const allowance = await token.allowance(deployer, exchange)
+      it('allocates an allowance for delegated token spending on zentadex', async () => {
+        const allowance = await token.allowance(deployer, zentadex)
         allowance.toString().should.equal(amount.toString())
       })
 
@@ -127,7 +127,7 @@ contract('Token', ([deployer, receiver, exchange]) => {
         log.event.should.eq('Approval')
         const event = log.args
         event.owner.toString().should.equal(deployer, 'owner is correct')
-        event.spender.should.equal(exchange, 'spender is correct')
+        event.spender.should.equal(zentadex, 'spender is correct')
         event.value.toString().should.equal(amount.toString(), 'value is correct')
       })
 
@@ -150,12 +150,12 @@ contract('Token', ([deployer, receiver, exchange]) => {
 
     beforeEach(async () => {
       amount = tokens(1000)
-      await token.approve(exchange, amount, { from: deployer })
+      await token.approve(zentadex, amount, { from: deployer })
     })
 
     describe('success', async () => {
       beforeEach(async () => {
-        result = await token.transferFrom(deployer, receiver, amount, { from: exchange })
+        result = await token.transferFrom(deployer, receiver, amount, { from: zentadex })
       })
 
       it('transfers token balances', async () => {
@@ -167,7 +167,7 @@ contract('Token', ([deployer, receiver, exchange]) => {
       })
 
       it('resets the allowance', async () => {
-        const allowance = await token.allowance(deployer, exchange)
+        const allowance = await token.allowance(deployer, zentadex)
         allowance.toString().should.equal('0')
       })
 
