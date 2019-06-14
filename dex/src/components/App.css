@@ -1,0 +1,186 @@
+.content  {
+  background-color: #0c0d0e;
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding: 3px;
+  z-index: 1;
+}
+
+.content > div {
+  width: 20%;
+  padding-right: 4px
+}
+
+.content > div:first-child {
+  min-width: 220px
+}
+
+.content > div:nth-child(2) {
+  min-width: 200px
+}
+
+.content  div:nth-child(3) {
+  width: 50%
+}
+
+.content > div:last-child {
+  padding-right: 0;
+  min-width: 280px
+}
+
+@media (max-width:992px) {
+  .content {
+    display: block;
+    overflow-y: auto
+  }
+
+  .content > div {
+    width: 100%!important;
+    padding-right: 0;
+    padding-bottom: 8px
+  }
+}
+
+.vertical > div {
+  height: 100%
+}
+
+.vertical-split {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.vertical-split > div {
+  height: 49.7%
+}
+
+.vertical-split > div:first-child {
+  margin-bottom: 4px
+}
+
+.vertical-split:last-child > div:first-child {
+  height: 60%
+}
+
+.vertical-split:last-child > div:last-child {
+  height: 40%
+}
+
+@media (max-width:992px) {
+  .vertical-split {
+    display: block
+  }
+  .vertical-split > div,
+  .vertical-split > div:first-child {
+    height: auto
+  }
+}
+
+.card {
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.card-header {
+  padding: 0px 0px;
+  color: #ffffff;
+  border-radius: 0px;
+  border-color: rgb(255, 255, 255);
+  
+}
+
+.card-body{
+  flex: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  padding: 0px;
+  
+}
+
+.card-body th {
+  border-top: 0;
+}
+
+.card-body .nav-tabs {
+  border-color: rgb(255, 255, 255);
+  margin:5px;
+}
+
+.card-body .nav-item.nav-link {
+  font-size: 65%;
+  font-weight: bold;
+  background-color: inherit;
+  color: inherit;
+  padding: 4px 8px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 0px;
+}
+
+
+.card-body .nav-item.nav-link.active {
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 4px solid #ffffff;
+}
+
+.card-body .price-chart {
+  height:100%;
+  padding-bottom: 60px;
+}
+
+.card-body .price-chart .price {
+  padding-left: center;
+  padding-bottom: 0;
+}
+
+td.cancel-order {
+  cursor: pointer;
+}
+
+tr.order-book-order {
+  cursor: pointer;
+}
+
+.nav-metamask {
+  margin-top: 0px;
+  margin-right:-7px;
+  background-color: #086ac5;
+}
+
+.nav-button {
+  margin-right: -20px;
+  margin-top: 0px;
+}
+
+.navbar {
+  background-color:#191b20;
+}
+
+.balance {
+  background-color:#191b20;
+}
+
+.card-balance {
+  background: #191b20;
+}
