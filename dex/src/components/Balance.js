@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { Tabs, Tab } from 'react-bootstrap'
-import Spinner from './Spinner'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Tabs, Tab } from 'react-bootstrap';
+import Spinner from './Spinner';
 import {
   loadBalances,
   depositEther,
   depositToken,
   withdrawEther,
   withdrawToken
-} from '../store/interactions'
+} from '../store/interactions';
 import {
   zentadexSelector,
   tokenSelector,
@@ -23,7 +23,7 @@ import {
   etherWithdrawAmountSelector,
   tokenDepositAmountSelector,
   tokenWithdrawAmountSelector,
-} from '../store/selectors'
+} from '../store/selectors';
 import {
   etherDepositAmountChanged,
   etherWithdrawAmountChanged,
