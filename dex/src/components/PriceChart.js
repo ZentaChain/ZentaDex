@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import Chart from 'react-apexcharts'
-import Spinner from './Spinner'
-import { chartOptions } from './PriceChart.config'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Chart from 'react-apexcharts';
+import Spinner from './Spinner';
+import { chartOptions } from './PriceChart.config';
 import {
   priceChartLoadedSelector,
   priceChartSelector
-} from '../store/selectors'
+} from '../store/selectors';
 
 const priceSymbol = (lastPriceChange) => {
   let output
@@ -17,7 +17,6 @@ const priceSymbol = (lastPriceChange) => {
   }
   return(output)
 }
-
 const showPriceChart = (priceChart) => {
   return(
     <div className="price-chart">
@@ -28,7 +27,6 @@ const showPriceChart = (priceChart) => {
     </div>
   )
 }
-
 class PriceChart extends Component {
   render() {
     return (
@@ -43,9 +41,7 @@ class PriceChart extends Component {
     )
   }
 }
-
 function mapStateToProps(state) {
-
   return {
     priceChartLoaded: priceChartLoadedSelector(state),
     priceChart: priceChartSelector(state),
