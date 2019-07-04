@@ -37,6 +37,7 @@ ZentaDex is not "Just Another" Dex, its an Open source fully Supported and fast 
 Here's why:
 * ZentaDEX is a full blown Exchange Plattform hostet on the Ethereum-network. Its fully integratet in Zentachain Products  as [ZentaVault](), [Zentalk](http://www.zentalk.chat/) and [ZentaWallet]()
 * We provide a secure integrated and 24/7 Supportet Platform 
+* Build an exchange that is frictionless to use, cannot be taken down and owned by the community.
 * The team works Daily on Improvements and you can help :smile:
 
 The Platform as you see is just an Addon to the whole Zentachain univerese. If you like you can contact us over E-mail , [Twitter](https://twitter.com/zentachain) or [Telegramm](https://t.me/ZentachainOfficialChat). Our Team will help you out!
