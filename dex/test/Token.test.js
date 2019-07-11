@@ -82,8 +82,6 @@ contract('Token', ([deployer, receiver, zentadex]) => {
 
     })
 
-
-
     describe('failure', async () => {
 
       it('rejects insufficient balances', async () => {
@@ -109,7 +107,6 @@ contract('Token', ([deployer, receiver, zentadex]) => {
     let result
     let amount
     
-
     beforeEach(async () => {
       amount = tokens(1000)
       result = await token.approve(zentadex, amount, { from: deployer })
@@ -134,14 +131,12 @@ contract('Token', ([deployer, receiver, zentadex]) => {
     })
 
 
-
     describe('failure', () => {
       it('rejects invalid spenders', async () => {
         await token.approve(0x0, amount, { from: deployer }).should.be.rejected
       })
     })
   })
-
 
 
   describe('delegated token transfers', () => {
@@ -183,7 +178,6 @@ contract('Token', ([deployer, receiver, zentadex]) => {
     })
 
 
-
     describe('failure', async () => {
       it('rejects insufficient amounts', async () => {
         
@@ -197,4 +191,4 @@ contract('Token', ([deployer, receiver, zentadex]) => {
     })
   })
 
-})
+});
