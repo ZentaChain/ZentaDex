@@ -31,7 +31,7 @@
 
 <!-- ABOUT ZENTADEX -->
 ## ZENTADEX
-ZentaDex is not "Just another" Dex, its an Open Source fully supported and fast Crypto-exchange platform. You can trade Zenta and Erc20 token over ZentaDex. The User Interface is easy to use and the integration in our other products makes it more convenient for you! Due to the Nature of the Blockchain-network your funds are secured on your own wallet, remember: not your keys not your coins. Also what are your waiting for? Trade on [ZentaDEX](http:///) today!
+*ZentaDex is not "Just another" Dex, its an Open Source fully supported and fast Crypto-exchange platform. You can trade Zenta and *Erc20 token over ZentaDex. The User Interface is easy to use and the integration in our other products makes it more convenient for* *you! Due to the Nature of the Blockchain-network your funds are secured on your own wallet, remember: not your keys not your coins.* *Also what are your waiting for? Trade on [ZentaDEX](http:///) today!*
 
 
 Here's why:
@@ -45,8 +45,8 @@ The Platform as you see is just an Addon to the whole Zentachain univerese. If y
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+*Distributed under the MIT License. See `LICENSE` for more information.*
 
-“I definitely hope centralized exchanges go burn in hell as much as possible” Vitalik Buterin
+*“I definitely hope centralized exchanges go burn in hell as much as possible” Vitalik Buterin*
 
 *[This project is under active development, there may be breaking changes.]*
