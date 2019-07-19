@@ -47,6 +47,4 @@ The Platform as you see is just an Addon to the whole Zentachain univerese. If y
 
 *Distributed under the MIT License. See `LICENSE` for more information.*
 
-*“I definitely hope centralized exchanges go burn in hell as much as possible” Vitalik Buterin*
-
 *[This project is under active development, there may be breaking changes.]*
