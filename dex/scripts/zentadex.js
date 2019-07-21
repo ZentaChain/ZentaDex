@@ -72,7 +72,7 @@ module.exports = async function(callback) {
 
     /////////////////////////////////////////////////////////////
     // Seed Filled Orders
-    //
+    // Seed Unfilled Orders
 
     // User 1 makes order
     result = await zentadex.makeOrder(token.address, tokens(100), ETHER_ADDRESS, ether(0.1), { from: user1 })
@@ -132,4 +132,4 @@ module.exports = async function(callback) {
   }
 
   callback()
-}
+};
