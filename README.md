@@ -48,3 +48,5 @@ The Platform as you see is just an Addon to the whole Zentachain univerese. If y
 *Distributed under the MIT License. See `LICENSE` for more information.*
 
 *[This project is under active development, there may be breaking changes.]*
+
+#### *Zentadex has been stopped because of user are not interested too much in DEX. the Core code is almost done and works without issues. (26.07.2019)*
