@@ -13,7 +13,7 @@
 
   <h3 align="center">Wellcome to ZentaDEX</h3>
 
-  <p align="center">
+  <p align="center"><em>
    An Opensource Decentralized Exchange-Platform from Zentachain.
     <br />
     <a href="https://github.com/ZentaChain/Zentadex/tree/master/dex"><strong>ZentaDEX</strong></a>
@@ -25,7 +25,7 @@
     ·
     <a href="https://github.com/ZentaChain/Zentadex/tree/master/dex">Request a Change!</a>
   </p>
-</p>
+</p></em>
 
 
 
