@@ -38,13 +38,11 @@ Here's why:
 * *ZentaDEX is a full blown Exchange Plattform hosted on the Ethereum-network. Its fully integrated in Zentachain poroducts  as [ZentaVault]**(), [Zentalk](http://www.zentalk.chat/) and [ZentaWallet]()*
 * *We provide a secure, integrated and 24/7 supported platform.* 
 * *Build an exchange that is frictionless to use, cannot be taken down and owned by the community.*
-* *The team works daily on improvements and you can help*
 
 *The Platform as you see is just an addon to the whole Zentachain universe. If you like you can contact us over E-mail , [Twitter]**(https://twitter.com/zentachain) or [Telegram](https://t.me/ZentachainOfficialChat). Our Team will help you out!*
 
 <!-- LICENSE -->
 ### *License*
-
 *Distributed under the MIT License. See `LICENSE` for more information.*
 
 *[This project is under active development, there may be breaking changes.]*
