@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { accountSelector } from '../store/selectors'
 
-
-
-
 class Navbar extends Component {
   render() {
     return (
@@ -36,7 +33,7 @@ class Navbar extends Component {
                 href={`https://etherscan.io/address/${this.props.account}`}
               target="_blank"
               rel="noopener noreferrer"
-            > CONNECTED:
+              > CONNECTED:
               {this.props.account}
             </a>
           </a>
