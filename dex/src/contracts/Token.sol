@@ -4,7 +4,6 @@ import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 
 contract Token {
     using SafeMath for uint;
-
     string public name = "Zenta";
     string public symbol = "Zenta";
     uint256 public decimals = 18;
