@@ -2,9 +2,9 @@
 <br />
 <p align="center">
   <a href="zentachain.com">
-    <img src="Zentalogo.png" alt="Logo" width="70" height="80">
+    <img src="Zentalogo.png" alt="Logo" width="100" height="100">
   </a>
-  <h3 align="center">Wellcome to ZentaDEX</h3>
+  <h3 align="center">Welcome to ZentaDEX</h3>
   <p align="center"><em>
    An Opensource Decentralized Exchange-Platform from Zentachain.
     <br />
