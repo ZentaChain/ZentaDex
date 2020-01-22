@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="zentachain.com">
-    <img src="logo.png" alt="Logo" width="70" height="80">
+    <img src="Zenta logo.png" alt="Logo" width="70" height="80">
   </a>
   <h3 align="center">Wellcome to ZentaDEX</h3>
   <p align="center"><em>
