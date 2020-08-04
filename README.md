@@ -33,6 +33,4 @@ Here's why:
 ### *License*
 *Distributed under the MIT License. See `LICENSE` for more information.*
 
-*[This project is under active development, there may be breaking changes.]*
-
 #### *Zentadex has been stopped because DEX could not attract the expected attention. The Core code is almost done and works without issues.  (26.07.2019)*
