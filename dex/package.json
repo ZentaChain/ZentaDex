@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "apexcharts": "3.6.3",
+    "apexcharts": "3.24.0",
     "babel-polyfill": "6.26.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "6.24.1",
